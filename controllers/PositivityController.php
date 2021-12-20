@@ -32,6 +32,8 @@ class PositivityController {
 
         if($positiveWordsCounter == 0) { // case neutre
             $notification = "neutre";
+        } else if($positiveWordsCounter == 1 || $positiveWordsCounter == 2) { // case correct
+            $notification = "correct";
         }
 
         return $notification;
