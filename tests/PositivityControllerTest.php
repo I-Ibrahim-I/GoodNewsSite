@@ -45,7 +45,7 @@ class PositivityControllerTest extends TestCase
         // Arrange
         $mot = new PositivityController();
         // Act
-        $actual = $mot->countPositiveWords("je suis pas gentil");
+        $actual = $mot->countPositiveWords("je suis pas bete");
         // Assert
         $this->assertEquals("neutre",$actual);
     }
@@ -99,7 +99,7 @@ class PositivityControllerTest extends TestCase
         // Arrange
         $mot = new PositivityController();
         // Act
-        $actual = $mot->countPositiveWords("gentil parfaite parfait beau");
+        $actual = $mot->countPositiveWords("negatif parfaite parfait beau");
         // Assert
         $this->assertEquals("bon",$actual);
     }
@@ -117,7 +117,7 @@ class PositivityControllerTest extends TestCase
         // Arrange
         $mot = new PositivityController();
         // Act
-        $actual = $mot->countPositiveWords("gentil parfaite parfait super mal mauvais");
+        $actual = $mot->countPositiveWords("negatif parfaite parfait super mal mauvais");
         // Assert
         $this->assertEquals("bon",$actual);
     }
