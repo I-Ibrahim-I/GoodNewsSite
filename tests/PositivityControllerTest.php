@@ -9,7 +9,7 @@ class PositivityControllerTest extends TestCase
         // Arrange
         $mot = new PositivityController();
         // Act
-        $actual = $mot->neutral();
+        $actual = $mot->countPositiveWords("");
         // Assert
         $this->assertEquals("neutre",$actual);
     }
