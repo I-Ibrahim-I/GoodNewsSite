@@ -39,6 +39,10 @@ class PositivityController {
         return $notification;
     }
 
+    public function neutral() {
+        return "neutre";
+    }
+
     public function correct() {
         return "correct";
     }
