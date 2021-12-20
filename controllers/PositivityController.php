@@ -30,11 +30,15 @@ class PositivityController {
             }
         }
 
-        if($positiveWordsCounter == 0) {
+        if($positiveWordsCounter == 0) { // case neutre
             $notification = "neutre";
         }
 
         return $notification;
+    }
+
+    public function correct() {
+        return "correct";
     }
 
 }
