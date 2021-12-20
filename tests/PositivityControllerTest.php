@@ -1,6 +1,6 @@
 <?php
-require '../vendor/autoload.php';
-require '../controllers/PositivityController.php';
+require 'vendor/autoload.php';
+require 'controllers/PositivityController.php';
 use PHPUnit\Framework\TestCase;
 
 class PositivityControllerTest extends TestCase
