@@ -23,6 +23,15 @@ class PositivityControllerTest extends TestCase
         $this->assertEquals("neutre",$actual);
     }
 
+    public function testCountGiven2WordShouldReturnNeutre() {
+        // Arrange
+        $mot = new PositivityController();
+        // Act
+        $actual = $mot->countPositiveWords("mal mechant");
+        // Assert
+        $this->assertEquals("neutre",$actual);
+    }
+
     public function testCountGiven1WordShouldReturnCorrect() {
         // Arrange
         $mot = new PositivityController();
