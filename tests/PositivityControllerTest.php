@@ -90,7 +90,7 @@ class PositivityControllerTest extends TestCase
         // Arrange
         $mot = new PositivityController();
         // Act
-        $actual = $mot->countPositiveWords("gentil parfait super");
+        $actual = $mot->countPositiveWords("genial parfait super");
         // Assert
         $this->assertEquals("bon",$actual);
     }
@@ -113,5 +113,12 @@ class PositivityControllerTest extends TestCase
         $this->assertEquals("bon",$actual);
     }
 
-
+    public function testCountGiven6WordShouldReturnBon() {
+        // Arrange
+        $mot = new PositivityController();
+        // Act
+        $actual = $mot->countPositiveWords("gentil parfaite parfait super mal mauvais");
+        // Assert
+        $this->assertEquals("bon",$actual);
+    }
 }
