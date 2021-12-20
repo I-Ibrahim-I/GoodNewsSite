@@ -34,6 +34,8 @@ class PositivityController {
             $notification = "neutre";
         } else if($positiveWordsCounter == 1 || $positiveWordsCounter == 2) { // case correct
             $notification = "correct";
+        } else if($positiveWordsCounter == 3 || $positiveWordsCounter == 4) { // case bon
+            $notification = "bon";
         }
 
         return $notification;
