@@ -47,4 +47,8 @@ class PositivityController {
         return "correct";
     }
 
+    public function bon() {
+        return "bon";
+    }
+
 }
